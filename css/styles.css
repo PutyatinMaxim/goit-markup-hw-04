@@ -117,7 +117,7 @@ header {
 }
 .address {
     margin-left: auto;
-    /* flex-wrap: wrap; */
+
 }
 .contacts-nav .item + .item {
     margin-left: 40px;
@@ -283,8 +283,6 @@ margin-right: 24px;
     border-bottom-right-radius: 4px;
 }
 
-
-
 .foto-team:not(:last-child) {
     margin-right: 24px;
 }
@@ -297,23 +295,41 @@ h3.foto-team {
 }
 
 .team-icon {
-    width: 40px;
-    height: 40px;
-   fill:#4D5AE5;
+    width: 16px;
+    height: 16px;
+   
 }
 
-.team-icon:hover {
-fill:#404BBF;
+.social-networks:hover {
+    background-color:#404BBF; 
 }
 
 .text-team {
     margin-bottom: 8px;
-    
 }
 
+.social-networks {
+   background-color:#4D5AE5; 
+   width: 100%;
+   height: 100%; 
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   border-radius: 50px;
+}
 
-.social-networks:not(:last-child) {
+.social-team:not(:last-child){
     margin-right: 24px;
+}
+
+.social-team{
+    width: 40px;
+    height: 40px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -412,14 +428,12 @@ fill:#404BBF;
 
 /* foto-portfolio  */
 
-.foto-item:hover,
-.foto-item:focus{
-    box-shadow:  0px 2px
-    rgba(46, 47, 66, 0.08),
-      0px 1px
-    rgba(46, 47, 66, 0.16),
-     0px 1px
-    rgba(46, 47, 66, 0.08)
+.foto-portfolio:hover,
+.foto-portfolio:focus{
+    box-shadow:  
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+     0px 1px 6px rgba(46, 47, 66, 0.08)
 } 
 
 .border-portfolio {
@@ -450,6 +464,7 @@ fill:#404BBF;
 
 .foto-portfolio {
     text-decoration: none;
+    display: block;
 }
 
 .text-portfolio {
@@ -505,15 +520,32 @@ fill:#404BBF;
     line-height: 1.5
 }
 .footer-icon {
-    width: 40px;
-    height: 40px;
-fill: rgba(255, 255, 255, 0.1)
+    width: 24px;
+    height: 24px;
+
 }
 
-.footer-icon:hover,
-.footer-icon:focus {
-    fill:#31D0AA;
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+    background-color:#31D0AA;
+}
+
+.footer-link-icon {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);  
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.social-networks-footer{
+    width: 40px;
+    height: 40px;
+    display: flex;
 }
 .social-networks-footer:not(:last-child){
     margin-right: 24px;
+
 }
